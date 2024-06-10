@@ -1,0 +1,19 @@
+.art-piece {
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+  }
+  
+  .art-piece:hover {
+    transform: translateZ(30px);
+  }
+  
+  .art-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .art-info {
+    text-align: center;
+    margin-top: 10px;
+  }
+  

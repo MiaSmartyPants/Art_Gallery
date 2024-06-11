@@ -83,7 +83,7 @@ Some CSS properties, especially 3D related ones, only work in modern browsers. T
 
 1. Clone the repo: 
    ```
-   git clone https://github.com/MiaSmartyPants/Pringle_Mingle
+   git clone https://github.com/MiaSmartyPants/Art_Gallery
    ```
 2. Take out the owner's git:
     ```

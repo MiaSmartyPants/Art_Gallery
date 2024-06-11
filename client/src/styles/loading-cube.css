@@ -5,8 +5,7 @@ body, html {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: #1a1a1a; /* Slightly darker background */
-}
+  background-color: #1a1a1a; 
 
 .container {
   width: 400px;
@@ -24,15 +23,15 @@ body, html {
   transform-style: preserve-3d;
   transform: translateZ(-100px);
   transition: transform 1s;
-  animation: cubeRotate 15s linear infinite; /* Slower rotation */
+  animation: cubeRotate 15s linear infinite; 
 }
 
 .cube > div {
   position: absolute;
   width: 200px;
   height: 200px;
-  opacity: 1; /* Fully opaque */
-  border-radius: 80px; /* Beveled, bubble-like appearance */
+  opacity: 1; 
+  border-radius: 80px; 
 }
 
 @keyframes cubeRotate {
@@ -84,32 +83,33 @@ body, html {
 }
 
 .front.side {
-  background-color: #ff6666; /* Light red */
+  background-color: #ff6666; 
   transform: translateZ(100px);
 }
 
 .back.side {
-  background-color: #6666ff; /* Light blue */
+  background-color: #6666ff; 
   transform: translateZ(-100px);
 }
 
 .left.side {
-  background-color: #ffff66; /* Light yellow */
+  background-color: #ffff66; 
   transform: rotateY(90deg) translateZ(100px);
 }
 
 .right.side {
-  background-color: #66ffff; /* Light cyan */
+  background-color: #66ffff; 
   transform: rotateY(-90deg) translateZ(100px);
 }
 
 .top.side {
-  background-color: #66ff66; /* Light green */
+  background-color: #66ff66; 
   transform: translateY(-100px) rotateX(90deg);
 }
 
 .bottom.side {
-  background-color: #ff66ff; /* Light magenta */
+  background-color: #ff66ff; 
   transform: translateY(-100px) rotateX(90deg);
 }
 
+}

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import '../styles/gallery.css';
 import LoadingCube from './LoadingCube';
 
+// display immersive screen
 const Gallery = ({ images }) => {
   const visible = false;
 useEffect(() => {

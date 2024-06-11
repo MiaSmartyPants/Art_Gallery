@@ -6,6 +6,7 @@ const ImageGenerator = ({ onImagesGenerated }) => {
   const visible = true;
   const [prompt, setPrompt] = useState('');
 
+  // create a fetch req for images to generate from craiyon
   const generateImages = async () => {
     try {
       const response = await fetch('http://localhost:3001/generate-images', {

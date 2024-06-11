@@ -40,12 +40,7 @@ An immersive art gallery featuring:
       <br>JavaScript
     </td>
     <td align="center" width="96">
-        <img src="https://user-images.githubusercontent.com/74997368/168976819-15a1f4e0-29cf-4ac0-94a7-1f15eee374a1.png" width="48" height="48" alt="postgreSQL" />
-      <br>postgreSQL
-    </td>
-    <td align="center" width="96">
-        <img src="https://user-images.githubusercontent.com/74997368/168978951-5ac2af5e-c911-4e59-b493-683071cf1860.png" width="48" height="48" alt="Express" />
-      <br>Express
+      <br>Craiyon
     </td>
     </tr>
   <tr>
@@ -54,20 +49,7 @@ An immersive art gallery featuring:
       <br>React
     </td>
     <td align="center" width="96">
-        <img src="https://user-images.githubusercontent.com/74997368/168979848-733f7090-0f78-401a-9ceb-4267231abef7.png" width="48" height="48" alt="Node" />
-      <br>Node
-    </td>
-    <td align="center" width="96">
-        <img src="https://user-images.githubusercontent.com/74997368/168980647-1690f9de-bf0e-4318-93cb-1b2ba3701ded.png" width="48" height="48" alt="Bootstrap" />
-      <br>Bootstrap
-    </td>
-    <td align="center" width="96">
-        <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j8z02ssteea4zj1k1nyz" width="48" height="48" alt="Render" />
-      <br>Render
-    </td>
-    <td align="center" width="96">
-        <img src="https://pbs.twimg.com/profile_images/1273938647297994753/2mvrQgmu_400x400.jpg" width="48" height="48" alt="Email js" />
-      <br>Email Js
+      <br>Python
     </td>
   </tr>
 </table>

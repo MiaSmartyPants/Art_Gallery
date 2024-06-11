@@ -72,7 +72,7 @@ useEffect(() => {
       <p className="debug debug-top" id="t">0</p>
       <p className="debug debug-bot">
         <br />
-        Move your mouse horizontally
+        <h2> Sroll to see the Magic! </h2>
       </p>
     </div>
   );

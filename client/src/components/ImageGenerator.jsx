@@ -28,6 +28,7 @@ const ImageGenerator = ({ onImagesGenerated }) => {
 
   return (
     <div>
+    Will take 75 seconds to generate
     <div id="search-form">
       <input
         id="search-input"

@@ -14,8 +14,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "vitest",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest"
+    }
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +42,11 @@
     ]
   },
   "devDependencies": {
-    "ajv": "^8.16.0"
+    "@babel/plugin-syntax-jsx": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "@vitejs/plugin-react": "^4.3.1",
+    "ajv": "^8.16.0",
+    "jsdom": "^24.1.0",
+    "vitest": "^1.6.0"
   }
 }

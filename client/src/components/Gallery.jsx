@@ -1,41 +1,39 @@
 import React, { useEffect } from 'react';
 import '../styles/gallery.css';
+import LoadingCube from './LoadingCube';
 
 const Gallery = ({ images }) => {
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      const wrapper = document.getElementById('wrapper');
-      const rect = wrapper.getBoundingClientRect();
-      const padding = 200;
-      const slidesCount = 3 - 1;
+  const visible = false;
+useEffect(() => {
+  const handleMouseMove = (e) => {
+    const wrapper = document.getElementById('wrapper');
+    const rect = wrapper.getBoundingClientRect();
+    const mouseX = Math.min(Math.max(e.clientX - 200, 0), rect.width - 400);
+    const rawPercent = ((mouseX / (rect.width - 400)) * 300) - 100;
 
-      const map = (x, in_min, in_max, out_min, out_max) => {
-        return ((x - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
-      };
+    const left = document.getElementById('left');
+    const center = document.getElementById('center');
+    const right = document.getElementById('right');
 
-      const mouseX = Math.min(Math.max(e.clientX - padding, 0), rect.width - padding * 2);
-      const rawPercent = map(mouseX, 0, rect.width - padding * 2, 100 - 100 * slidesCount, 100);
-      const percent = Math.round(rawPercent);
-      const left = document.getElementById('left');
-      const center = document.getElementById('center');
-      const right = document.getElementById('right');
+    const depth = rawPercent / 5;
 
-      left.style.transform = `translateX(${percent}%)`;
-      center.style.transform = `translateX(${percent - 100}%)`;
-      right.style.transform = `translateX(${percent - 200}%)`;
+    left.style.transform = `translateX(${rawPercent}%) translateZ(${depth}px)`;
+    center.style.transform = `translateX(${rawPercent - 100}%) translateZ(${depth}px)`;
+    right.style.transform = `translateX(${rawPercent - 200}%) translateZ(${depth}px)`;
+  };
 
-      const paragraph = document.getElementById('t');
-      paragraph.innerHTML = percent;
-    };
+  document.addEventListener('mousemove', handleMouseMove);
+  return () => {
+    document.removeEventListener('mousemove', handleMouseMove);
+  };
+}, []);
 
-    document.addEventListener('mousemove', handleMouseMove);
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
 
   return (
     <div className="wrapper" id="wrapper">
+      {/* {images && (
+        <LoadingCube visible={visible} />
+      )} */}
       <div className="wrapper-3d">
         <div className="carousel-wrapper center-3d">
           <div className="carousel-container" id="center">

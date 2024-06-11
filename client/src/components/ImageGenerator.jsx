@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/gallery.css';
+import LoadingCube from './LoadingCube';
 
 const ImageGenerator = ({ onImagesGenerated }) => {
+  const visible = true;
   const [prompt, setPrompt] = useState('');
 
   const generateImages = async () => {
@@ -25,6 +27,7 @@ const ImageGenerator = ({ onImagesGenerated }) => {
   };
 
   return (
+    <div>
     <div id="search-form">
       <input
         id="search-input"
@@ -38,7 +41,9 @@ const ImageGenerator = ({ onImagesGenerated }) => {
           }
         }}
       />
-      <button id="search-button" type="button" onClick={searchImages}>Search</button>
+      <button id="search-button" type="button" onClick={searchImages}>Generate</button>
+    </div>
+    {/* <LoadingCube visible={visible} /> */}
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import unittest
 import requests
-
+# *Functional test* to ensure images are present when endpoint is triggered
 class ServerTest(unittest.TestCase):
 
     def test_generate_images(self):
         # Define the URL for the POST request
-        url = 'http://127.0.0.1:3001/generate-images'
+        url = 'http://localhost:3001/generate-images'
 
         # Define the payload for the POST request
         payload = {

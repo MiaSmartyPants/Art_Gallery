@@ -25,8 +25,7 @@ An immersive art gallery featuring:
 
 ## Walkthrough
 It takes 75 seconds for images to generate. I have removed the wait times from the video.
-https://github.com/MiaSmartyPants/Art_Gallery/assets/106205169/d1004fab-e428-4490-a050-e35c5bf45c01
-
+https://github.com/MiaSmartyPants/Art_Gallery/assets/106205169/00e98edd-251d-416a-9c25-a5815e0d2ccc
 
 ## Tech Stack
 

@@ -97,6 +97,7 @@ To run tests on the terminal:
     ```
 
 ## Future Developments
-Enhanced AI Image Generation: Improve the AI model for better image generation.
+Apply conditional rendering of the cube with timer
 More Interactive Features: Add more interactive elements for a better user experience.
-Performance Optimization: Optimize the application for faster load times and better performance.
+
+

@@ -36,45 +36,41 @@ useEffect(() => {
         <LoadingCube visible={visible} />
       )} */}
       <div className="wrapper-3d">
-        <div className="carousel-wrapper center-3d">
-          <div className="carousel-container" id="center">
+        <div className="screen-wrapper center-screen">
+          <div className="screen-container" id="center">
             {images.slice(0, 3).map((image, index) => (
               <div
                 key={index}
-                className={`slide ${index === 0 ? 'first' : index === 1 ? 'second' : 'third'}`}
+                className={`main ${index === 0 ? 'first' : index === 1 ? 'second' : 'third'}`}
                 style={{ backgroundImage: `url(${image})` }}
               ></div>
             ))}
           </div>
         </div>
-        <div className="carousel-wrapper left-3d center-3d">
-          <div className="carousel-container" id="left">
+        <div className="screen-wrapper left-screen center-screen">
+          <div className="screen-container" id="left">
             {images.slice(0, 3).map((image, index) => (
               <div
                 key={index}
-                className={`slide ${index === 0 ? 'first' : index === 1 ? 'second' : 'third'}`}
+                className={`main ${index === 0 ? 'first' : index === 1 ? 'second' : 'third'}`}
                 style={{ backgroundImage: `url(${image})` }}
               ></div>
             ))}
           </div>
         </div>
-        <div className="carousel-wrapper right-3d center-3d">
-          <div className="carousel-container" id="right">
+        <div className="screen-wrapper right-screen center-screen">
+          <div className="screen-container" id="right">
             {images.slice(0, 3).map((image, index) => (
               <div
                 key={index}
-                className={`slide ${index === 0 ? 'first' : index === 1 ? 'second' : 'third'}`}
+                className={`main ${index === 0 ? 'first' : index === 1 ? 'second' : 'third'}`}
                 style={{ backgroundImage: `url(${image})` }}
               ></div>
             ))}
           </div>
         </div>
       </div>
-      <p className="debug debug-top" id="t">0</p>
-      <p className="debug debug-bot">
-        <br />
-        <h2> Sroll to see the Magic! </h2>
-      </p>
+      <h2 className="grid top-grid" id="t">Welcome to The Art Gallery Experience</h2>
     </div>
   );
 };

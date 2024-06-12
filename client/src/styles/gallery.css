@@ -3,8 +3,9 @@ body, html {
   height: 100%;
   padding: 0;
   margin: 0;
-  background: #2e0359;
-  overflow: hidden;
+  background:url(https://img-new.cgtrader.com/items/3144497/affc13a698/large/art-museum-gallery-interior-4b-3d-model-low-poly-obj-fbx-blend-dae.jpg);
+  /* overflow: hidden; */
+  background-size: cover;
 }
 
 .wrapper {
@@ -29,13 +30,13 @@ body, html {
   width: 300px;
 }
 
-.carousel-wrapper {
+.screen-wrapper {
   overflow: hidden;
   width: 60vw;
   height: 80vh;
 }
 
-.carousel-container {
+.screen-container {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -43,7 +44,7 @@ body, html {
   transition: all 0.5s ease-out;
 }
 
-.slide {
+.main {
   flex-shrink: 0;
   width: 100%;
   height: 100%;
@@ -51,7 +52,7 @@ body, html {
 }
 
 
-.left-3d {
+.left-screen {
   position: absolute;
   transform-origin: right center;
   transform: rotateY(100deg);
@@ -60,15 +61,15 @@ body, html {
   right: calc(100%);
 }
 
-#left {
+/* #left {
   transform: translateX(0%);
-}
+} */
 
 #center {
   transform: translateX(-100%);
 }
 
-.right-3d {
+.right-screen {
   position: absolute;
   transform-origin: left center;
   transform: rotateY(-100deg);
@@ -81,7 +82,7 @@ body, html {
   transform: translateX(-200%);
 }
 
-.debug {
+.grid {
   position: absolute;
   text-align: center;
   width: 100%;
@@ -94,27 +95,20 @@ body, html {
   color: #fafafa ee;
 }
 
-.debug-top {
+.top-grid {
   top: 2vh;
 }
 
-.debug-bot {
-  bottom: 2vh;
-}
 
-.fa {
-  font-size: 15rem;
-  color: #fafafa 99;
-  line-height: 20px;
-}
+
 
 @media only screen and (min-width: 1600px) {
-  .right-3d {
+  .right-screen {
       transform: none;
       transform: rotateY(-120deg);
  }
 
-  .left-3d {
+  .left-screen {
       transform: none;
       transform: rotateY(120deg);
  }
